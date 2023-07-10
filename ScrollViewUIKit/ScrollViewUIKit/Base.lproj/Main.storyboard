@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrF-uX-LQy">
+                                <rect key="frame" x="0.0" y="217" width="393" height="983"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyj-HI-MlG">
+                                        <rect key="frame" x="166" y="29" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AT-vU-2O0">
+                                        <rect key="frame" x="159" y="896" width="102" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3AT-vU-2O0" firstAttribute="top" secondItem="hrF-uX-LQy" secondAttribute="top" constant="896" id="332-SP-wn8"/>
+                                    <constraint firstItem="3AT-vU-2O0" firstAttribute="leading" secondItem="hrF-uX-LQy" secondAttribute="leading" constant="159" id="Aun-6h-g81"/>
+                                    <constraint firstItem="Oyj-HI-MlG" firstAttribute="top" secondItem="hrF-uX-LQy" secondAttribute="top" constant="29" id="DFt-AH-6ZT"/>
+                                    <constraint firstAttribute="bottom" secondItem="3AT-vU-2O0" secondAttribute="bottom" constant="66" id="VRU-Z9-ftr"/>
+                                    <constraint firstAttribute="trailing" secondItem="3AT-vU-2O0" secondAttribute="trailing" constant="132" id="cHb-mU-bhh"/>
+                                    <constraint firstItem="Oyj-HI-MlG" firstAttribute="leading" secondItem="hrF-uX-LQy" secondAttribute="leading" constant="166" id="rZv-oO-w03"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hrF-uX-LQy" secondAttribute="trailing" id="4g6-tV-IJe"/>
+                            <constraint firstItem="hrF-uX-LQy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AJ1-gj-gpf"/>
+                            <constraint firstAttribute="bottom" secondItem="hrF-uX-LQy" secondAttribute="bottom" id="HbO-lU-nuw"/>
+                            <constraint firstItem="hrF-uX-LQy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="hQj-Fi-gpg"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1200"/>
+                    <connections>
+                        <outlet property="myScrollView" destination="hrF-uX-LQy" id="hAe-ct-Ctg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
